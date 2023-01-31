@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav .container-fluid {
+  border-bottom: solid #cea98f;
+}
+
+nav .container-fluid .offcanvas {
+  background: linear-gradient(#cea98f 0%, #cab082 35%, #84622a 85%);
+}
+
+nav .container-fluid .offcanvas .offcanvas-body ul {
+  padding: 10%;
+}
+
+nav .container-fluid .offcanvas .offcanvas-body ul li a {
+  font-size: large;
+  color: white;
+  font-weight: bolder;
+}
+
+nav .container-fluid .offcanvas .offcanvas-body ul li a:hover {
+  color: #821a1a;
+  border-right: solid red;
+  border-width: thick;
+}
+
+nav .container-fluid .offcanvas .offcanvas-body ul li a:active {
+  color: #821a1a;
+  border-right: solid red;
+  border-width: thick;
+}
+
+#container-admin {
+  background-image: url(../../public/images/about.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay-admin {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.578);
+  position: relative;
+  top: 0;
+  bottom: 20%;
+  padding: 5px;
+}
+
+.overlay-admin .row {
+  width: 100%;
+  padding-top: 10%;
+}
+
+.overlay-admin .row .col-4 form .mb-3 input {
+  background: transparent;
+  border: solid #ad7f2f;
+  color: white;
+}
+
+.overlay-admin .row .col-4 form .mb-3 select {
+  background: transparent;
+  border: solid #ad7f2f;
+  color: white;
+}
+
+.overlay-admin .row .col-4 form .mb-3 select option[selected] {
+  background-color: bisque !important;
+}
+
+.overlay-admin .row .col-4 form .mb-3 textarea {
+  background: transparent;
+  border: solid #ad7f2f;
+  color: white;
+}
+
+.overlay-admin .row .col-4 form .mb-3 label {
+  color: white;
+}
+
+.overlay-admin .row .col-8 {
+  box-shadow: 2px 2px 2px 2px rgba(207, 154, 62, 0.395);
+  height: 434px;
+}
+
+.overlay-admin .row .col-8 .row {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.overlay-admin .row .col-8 .row .col-4 {
+  margin-top: -96px;
+  padding-bottom: 20px;
+}
+
+.overlay-admin .row .col-8 .row .col-4 .card {
+  margin-bottom: 30%;
+  background-color: rgba(207, 154, 62, 0.395);
+}
+
+.overlay-admin .row .col-8 .row .col-4 .card .card-body p {
+  color: white;
+}
+
+.video-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.video-container .overlay {
+  height: 100vh;
+  background-color: rgba(255, 228, 196, 0.443);
+  position: relative;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+@media (max-width: 992.9px) {
+  .video-container .overlay {
+    display: block;
+  }
+}
+
+.video-container .overlay img {
+  height: 100vh;
+}
+
+@media (max-width: 992.9px) {
+  .video-container .overlay img {
+    height: 50%;
+  }
+}
+
+.video-container .overlay form {
+  padding-top: 10%;
+}
+
+@media (max-width: 992.9px) {
+  .video-container .overlay form {
+    width: 100% !important;
+    box-shadow: none;
+  }
+}
+
+.video-container .overlay form h3 {
+  color: #3C2A21;
+  text-align: center;
+  font-weight: bolder;
+  padding: 2%;
+}
+
+.video-container .overlay form .input-group input {
+  background: transparent;
+  border: solid #ad7f2f;
+  color: white;
+  font-size: larger;
+}
+
+.video-container .overlay form .input-group .input-group-text:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.646);
+}
+
+.video-container .overlay form .p-2 button {
+  font-size: larger;
+}
