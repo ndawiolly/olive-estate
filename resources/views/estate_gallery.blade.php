@@ -8,26 +8,25 @@
             <div class="row">
                 @forelse ($properties as $property)
 
-                <div class="col-3">
-                    <div class="card">
+                <div class="col-12 col-lg-3 p-2">
+                    <div class="card p-2">
                         <img src="../images/pic2.jpg" alt="work please" height = "200">
                         <div class="card-body">
                             {{ $property->p_id }}
                             <p class="text-danger">
-                                SB5 Styles Brook 4 Bed/3.5 Bath - Available for rest of the season!
-                                Stratton Mountain Resort Area, VT
+                                {{ $property->description}}
                             </p>
                             <div class="basic-info" >
-                                <p>$29,000<br>
+                                <p>${{  $property->price  }}<br>
                                 4 Beds/4 Total Baths/Rental<br>
                                 MLS #: SB5<br>
 
-                                Offered By: Stratton Real Estate, Stratton Real Estate
+                                {{  $property->signature}}
                                 </p>
                             </div>
                         </div>
                         <div class="stat d-flex justify-content-end text-info" >
-                            <p>status:Active</p>
+                            <p>status:{{ $property->p_status }}</p>
                         </div>
                     </div>
                 </div>

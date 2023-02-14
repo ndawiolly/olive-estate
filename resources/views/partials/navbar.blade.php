@@ -1,7 +1,7 @@
 {{-- first navbar ------------------------------------------ --}}
 <nav>
     <div class="nav-brand">
-        <img src="images/logo-header2.png" alt="my brand" height="50">
+        <img src="images/logo-header2.png" alt="my brand" height="80">
     </div>
 
     <div class="brand-name">
@@ -36,18 +36,21 @@
                         aria-expanded="false">
                         SEASONAL RENTALS
                     </a>
-                    
+
                     <ul class="dropdown-menu">
-                        
-                        @forelse ($products as $product )
-                        <li>
-                            <a class="dropdown-item" href="{{ route('estate_gallery',$product) }}">{{ $product }}</a>
-                        </li>
-                            
+
+                        @forelse ($products as $product)
+                            <li>
+                                <a class="dropdown-item"
+                                    href="{{ route('estate_gallery', $product) }}">{{ $product }}</a>
+                            </li>
+
                         @empty
-                            <li>Nothing</li>
+                            <li>
+                                <a class = "dropdown-item" href = "#">Nothing</a>
+                            </li>
                         @endforelse
-                       
+
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -61,7 +64,7 @@
                 </li>
 
             </ul>
-            
+
         </div>
     </div>
 </nav>

@@ -16,6 +16,7 @@ class Property extends Model
         'location',
         'signature',
         'p_status',
+        'cover_img',
         'description',
     ];
 

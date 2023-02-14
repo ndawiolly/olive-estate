@@ -59,20 +59,28 @@ class Pages extends Controller
         //   return redirect(route('contact'));
     }
 
+    public function editProp($id){
+        $products = ['Available Seasonal Rentals','Seasonal VIP program', 'list your Seasonal Home','Inquiry form'];
+        // $property = Property::where('id','=',$id)->get(); // The get method returns an array
+        // $property = Property::where('id','=',$id)->first(); // The first method returns the first row found
+        $property = Property::find($id);
+        return view("admin_section.edit",[
+            'property'=> $property,
+            'products'=> $products
+        ]);
+    }
+    public function updateProp(Request $request){
+      $property = Property::find($request->input('id'))->update([
+        'price' => $request->input('price'),
+        'location' => $request->input('location'),
+        'signature' => $request->input('signature'),
+        'description' => $request->input('description'),
+      ]);
 
-//    // Create a new Property
-//    public function createProp(Request $request){
-//     // dd($request->input());
-//     Property::create([
-//         'p_id' => $request->input('pid'),
-//         'price' => $request->input('price'),
-//         'location' => $request->input('location'),
-//         'signature' => $request->input('signature'),
-//         'p_status' => $request->input('status'),
-//         'description' => $request->input('description'),
-//     ]);
+      return back();
+    }
 
-//     // return redirect('/');
-//     return back();
-// }
+
+
+
 }

@@ -1,3 +1,4 @@
+@import url(c:\Users\Atlas\Documents\real-estate\resources\scss\admin.css);
 * {
   padding: 0;
   margin: 0;
@@ -15,8 +16,7 @@ nav .nav-brand img {
 
 nav .brand-name {
   text-align: center;
-  padding-top: 10px;
-  height: 80px;
+  padding-top: 2px !important;
   line-height: normal;
 }
 
@@ -31,7 +31,7 @@ nav .brand-name .head {
 }
 
 nav .social-m {
-  padding-top: 40px;
+  padding: 10px;
 }
 
 @media (max-width: 992.9px) {
@@ -69,7 +69,7 @@ nav .social-m {
 }
 
 .container-body img {
-  height: 814px;
+  height: 905px;
   position: absolute;
 }
 
@@ -145,7 +145,7 @@ nav .social-m {
 
 .container-body .overlay form button,
 .container-body .overlay form button::after {
-  width: 180px;
+  width: 150px;
   height: 40px;
   font-size: 20px;
   font-family: "Bebas Neue", cursive;
@@ -304,6 +304,10 @@ nav .social-m {
   }
 }
 
+.row {
+  width: 100%;
+}
+
 .row p {
   text-align: center;
   padding: 2%;
@@ -377,6 +381,11 @@ nav .social-m {
 
 .aboutContainer .aboutOverlay h3 {
   padding-top: 5%;
+}
+
+.aboutContainer .aboutOverlay .row {
+  height: 85%;
+  overflow-y: scroll;
 }
 
 .aboutContainer .aboutOverlay .img-div {

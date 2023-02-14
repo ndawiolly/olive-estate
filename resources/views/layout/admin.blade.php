@@ -8,13 +8,13 @@
     <title>Admin Portal(OliveEstate)</title>
     @vite([
             'resources/js/app.js',
-            'resources/scss/admin.scss'
+            'resources/scss/style.scss'
             ])
 
 </head>
 <body>
     @include('partials.admin_header')
-    
+
     @yield('content')
     @include('partials.admin_footer')
 </body>

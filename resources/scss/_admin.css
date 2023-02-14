@@ -156,6 +156,7 @@ nav .container-fluid .offcanvas .offcanvas-body ul li a:active {
   .video-container .overlay form {
     width: 100% !important;
     box-shadow: none;
+    padding: 0;
   }
 }
 

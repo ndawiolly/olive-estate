@@ -1,3 +1,4 @@
+@import "admin";
 * {
     padding: 0;
     margin: 0;
@@ -21,8 +22,8 @@ nav {
     }
     .brand-name {
         text-align: center;
-        padding-top: 10px;
-        height: 80px;
+        padding-top: 2px !important;
+        // height: 80px;
         line-height: normal;
         .head {
             font-size: 200%;
@@ -31,9 +32,8 @@ nav {
             }
         }
     }
-
     .social-m {
-        padding-top: 40px;
+        padding: 10px;
         @include mobile {
             display: none;
         }
@@ -50,6 +50,7 @@ nav {
                 .dropdown {
                     .dropdown-menu {
                         background-color: #d8a362c5;
+
                         li {
                             a:hover {
                                 background-color: transparent;
@@ -75,8 +76,9 @@ nav {
 // backgorund img///////////..............
 .container-body {
     height: 100vh;
+    // overflow: hidden;
     img {
-        height: 814px;
+        height: 905px;
         position: absolute;
         @include mobile {
             width: 100%;
@@ -135,7 +137,7 @@ nav {
             // button design...////////////////
             button,
             button::after {
-                width: 180px;
+                width: 150px;
                 height: 40px;
                 font-size: 20px;
                 font-family: "Bebas Neue", cursive;
@@ -299,6 +301,7 @@ nav {
     }
 }
 .row {
+    width: 100%;
     p {
         text-align: center;
         padding: 2%;
@@ -368,6 +371,12 @@ nav {
         h3 {
             padding-top: 5%;
         }
+        // gallery
+        .row{
+            height:85%;
+            overflow-y: scroll;
+        }
+
         // contact image////............*******
         .img-div {
             padding-top: 5%;

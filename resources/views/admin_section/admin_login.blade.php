@@ -15,6 +15,7 @@
                     <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                     <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
                   </div>
+                  <p class="pt-3">You should have gotten your password before loging in..</p>
                   <div class="p-2 d-flex justify-content-center">
                     <button class="btn btn-outline-success w-50" type="submit">Submit</button>
                   </div>
